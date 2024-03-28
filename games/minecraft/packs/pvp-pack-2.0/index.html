@@ -2,9 +2,8 @@
 // BG Download Page Urls n things ig
 let downloadURL = "https://cdn.glitch.me/66d0743c-ad55-4872-a5e2-cb0b06ede457/BGPACK.zip";
 let filename = "BG PvP Pack 2.0";
-
 </script>
-
+<script src="/downloads/download-api.js"></script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,24 +12,20 @@ let filename = "BG PvP Pack 2.0";
 <link rel="stylesheet" href="/downloads/download-api.css">
 </head>
 <body>
-
 <div class="container" id="container">
   <h1 id="filename">[filename}</h1>
   <p>Click the button below to download the file, <br> Ad free download for the most secure download!</p>
   <button id="downloadBtn">Download {fileExtension}</button>
 </div>
-
 <script>
 let fileExtension = downloadURL.split('.').pop();
 document.title = filename
 document.getElementById('filename').innerText = filename
-document.getElementById('downloadBtn').innerText = `Download .${fileExtension.toUpperCase()}`;
-
+document.getElementById('downloadBtn').innerText = `Download ${fileExtension.toUpperCase()}`;
 document.getElementById("downloadBtn").addEventListener("click", function() {
   window.location.href = downloadURL;
-  document.getElementById("container").innerHTML = "Downloading...<br>Download System V1.3 | BG API";
+  document.getElementById("container").innerHTML = `Downloading...<br>Download System ${version} | BG API`;
 });
 </script>
-
 </body>
 </html>
