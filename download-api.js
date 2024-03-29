@@ -16,6 +16,6 @@ let doaminLimitorEnabled = true
 
 // Below is not to be changed!
 
-function instalizeConfig {
+function instalizeConfig() {
   build()
 }
