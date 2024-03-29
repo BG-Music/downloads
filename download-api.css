@@ -42,3 +42,11 @@ button {
 button:hover {
   background-color: #45a049;
 }
+
+.scan-btn {
+  background-color: #2e88f0;
+}
+
+.scan-btn:hover {
+  background-color: #1c7ae6;
+}
