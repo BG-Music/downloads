@@ -12,3 +12,10 @@ let apikey = "31894"
 let doaminLimitorEnabled = true
 
 // Copyright 2023 - 2024
+
+
+// Below is not to be changed!
+
+function instalizeConfig {
+  build()
+}
